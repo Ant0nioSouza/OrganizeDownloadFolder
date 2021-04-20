@@ -11,3 +11,13 @@ All you need to do is add the desired extensions to the array:
 
 ## Release history
 - 0.1.0 - The first suitable launch.
+
+## Meta
+Antonio Souza - antoniodesigner30@gmail.com - https://github.com/Ant0nioSouza
+
+## Contributing
+1. Fork the project (https://github.com/Ant0nioSouza/OrganizeDownloadFolder/fork)
+2. Create a branch for your modification (git checkout -b feature / fooBar)
+3. Commit (git commit -am 'Add some fooBar')
+4. Push (git push origin feature / fooBar)
+5. Create a new Pull Request
