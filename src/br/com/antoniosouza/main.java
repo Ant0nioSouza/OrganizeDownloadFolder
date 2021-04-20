@@ -7,16 +7,18 @@ public class main {
     public static void main(String[] args) {
         String[] extensions = new String[]{".pdf", ".txt", ".log", ".tgz", ".m4a", ".jar", ".jar", ".7z", ".tar.gz", ".mp4", ".rar", ".zip", ".jpg", ".png", ".jpeg", ".pptx", ".docx", ".java", ".dat", ".exe", ".mp3", ".htm", ".tflite"}; // File extensions array
 
-        String path = "C:\\Users\\Antonio\\Downloads";
+        String home = System.getProperty("user.home");
+        System.out.println(home);
+        String path = home + "\\Downloads";
         File files = new File(path);
         File[] list = files.listFiles();
         System.out.println(Arrays.toString(list));
         for (File file : list) {
             String fileName = file.getName();
             for (String extension : extensions) {
-                File extensionDirectory = new File("C:\\Users\\Antonio\\Downloads\\" + extension);
+                File extensionDirectory = new File(home + "\\Downloads\\" + extension);
                 File directoryToExtensionFile = new File(String.valueOf(extensionDirectory) + "\\" + fileName);
-                File otherDirectory = new File("C:\\Users\\Antonio\\Downloads\\others");
+                File otherDirectory = new File(home + "\\Downloads\\others");
                 File directoryToOtherFile = new File(String.valueOf(otherDirectory) + "\\" + fileName);
                 if (fileName.endsWith(extension)) {
                     if (extensionDirectory.isDirectory()) {
