@@ -2,6 +2,8 @@
 #include <iostream>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <filesystem>
+#include <string>
 
 using namespace std;
 
@@ -15,3 +17,10 @@ int createDir(const char *a) {
 	}
 }
 
+int main() {
+	string currentPath = filesystem::current_path();
+
+	for (const auto & entry : filesystem::directory_iterator(currentPath)) {
+		filename = entry.path()
+	}
+}
