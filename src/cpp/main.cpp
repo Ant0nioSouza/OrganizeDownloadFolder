@@ -30,6 +30,8 @@ int main() {
 		while (getline(test, segment, '.')) {
 			segList.push_back(segment);
 		}
-		cout << segList.back() << endl;
+		string a = segList.back();
+		const char *extension = a.c_str();
+		createDir(extension);
 	}
 }
