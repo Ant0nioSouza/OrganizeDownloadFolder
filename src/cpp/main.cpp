@@ -30,8 +30,11 @@ int main() {
 		while (getline(test, segment, '.')) {
 			segList.push_back(segment);
 		}
+		if (segList.size() == 1)
+			continue;
 		string a = segList.back();
 		const char *extension = a.c_str();
 		createDir(extension);
+		cout << "FILE PATH: " << filename << endl;
 	}
 }
