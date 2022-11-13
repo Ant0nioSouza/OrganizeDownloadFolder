@@ -12,6 +12,7 @@ All you need to do is add the desired extensions to the array:
 ## Release history
 - 0.1.0 - The first suitable launch.
 - 0.1.1 - Fixed bug
+- 0.1.2 - CPP Compiled x86_65
 ## Meta
 Antonio Souza - antoniodesigner30@gmail.com - https://github.com/Ant0nioSouza
 
